@@ -41,7 +41,7 @@ export default function DetailSection() {
     <Container maxW={"5xl"} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-          <Heading>It's all here. All in one app. </Heading>
+          <Heading>It is all here. All in one app. </Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
             Discover local, on-demand delivery or Pickup from restaurants,
             nearby grocery and convenience stores, and more.
