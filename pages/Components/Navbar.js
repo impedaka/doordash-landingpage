@@ -14,6 +14,8 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Image,
+  Heading,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -21,22 +23,19 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-
+import Logos from "../Assets/Logo.png";
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Box>
       <Flex
-        mb="-16"
         zIndex="100"
+        bg="white"
         color="white"
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
         <Flex
@@ -54,14 +53,9 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color="white"
-          >
-            Logo
-          </Text>
-
+          <Box>
+            <Image src="https://www.simpleimageresizer.com/_uploads/photos/3b5546d4/DD_OpenGraph_preview-removebg-preview_50.png" />
+          </Box>
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -78,7 +72,6 @@ export default function WithSubnavigation() {
             fontSize={"sm"}
             fontWeight={600}
             variant={"link"}
-            color="white"
             href={"#"}
           >
             Sign In
