@@ -23,7 +23,6 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import Logos from "../Assets/Logo.png";
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
